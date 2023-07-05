@@ -1,0 +1,35 @@
+-- Create table
+create table TBL_PLAYERS
+(
+  pla_id    NUMBER(5) not null,
+  pla_name  VARCHAR2(15),
+  pla_level VARCHAR2(1),
+  pla_game  VARCHAR2(200),
+  pla_steps VARCHAR2(5)
+)
+tablespace UNA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table TBL_PLAYERS
+  add constraint PK_PLAYERS primary key (PLA_ID)
+  using index 
+  tablespace UNA
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );

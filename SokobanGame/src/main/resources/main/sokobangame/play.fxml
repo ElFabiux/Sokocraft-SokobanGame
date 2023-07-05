@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.sokobangame.Play">
+   <children>
+      <ImageView fitHeight="678.0" fitWidth="1200.0" layoutX="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagesBackground/dirt.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="ancNewGame" layoutX="34.0" prefHeight="480.0" prefWidth="1109.0" AnchorPane.bottomAnchor="195.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblPlayerName" alignment="CENTER" layoutX="442.0" layoutY="48.0" prefHeight="52.0" prefWidth="193.0" text="Player Name:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblLevelSelected" alignment="CENTER" layoutX="451.0" layoutY="262.0" prefHeight="52.0" prefWidth="79.0" text="Level:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblLevel" alignment="CENTER" layoutX="530.0" layoutY="262.0" prefHeight="52.0" prefWidth="102.0" text="..." textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHouse" alignment="CENTER" layoutX="93.0" layoutY="437.0" text="1-House" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHell" alignment="CENTER" layoutX="306.0" layoutY="437.0" text="2-Hell" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMine" alignment="CENTER" layoutX="495.0" layoutY="437.0" text="3-Mine" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblEnd" alignment="CENTER" layoutX="707.0" layoutY="437.0" text="4-End" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDragon" alignment="CENTER" layoutX="887.0" layoutY="437.0" text="5-Dragon" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" alignment="CENTER" layoutX="490.0" layoutY="100.0" prefHeight="43.0" prefWidth="147.0" styleClass="textfield-custom" stylesheets="@StyleCss.css">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtId" alignment="CENTER" editable="false" layoutX="425.0" layoutY="100.0" prefHeight="43.0" prefWidth="52.0" styleClass="textfield-custom" stylesheets="@StyleCss.css">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnLvlOne" layoutX="38.0" layoutY="314.0" mnemonicParsing="false" onAction="#clickLevelOne" prefHeight="120.0" prefWidth="200.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="115.0" fitWidth="331.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/house.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnLvlTwo" layoutX="238.0" layoutY="314.0" mnemonicParsing="false" onAction="#clickLevelTwo" prefHeight="120.0" prefWidth="200.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="115.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/hell.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnLvlThree" layoutX="438.0" layoutY="314.0" mnemonicParsing="false" onAction="#clickLevelThree" prefHeight="120.0" prefWidth="200.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="115.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/mine.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnLvlFour" layoutX="638.0" layoutY="314.0" mnemonicParsing="false" onAction="#clickLevelFour" prefHeight="120.0" prefWidth="200.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="115.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/end.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnLvlFive" layoutX="838.0" layoutY="314.0" mnemonicParsing="false" onAction="#clickLevelFive" prefHeight="120.0" prefWidth="200.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="115.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/dragon.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnContinue" layoutX="696.0" layoutY="499.0" mnemonicParsing="false" onAction="#clickContinue" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagesBackground/continueBackButton.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane fx:id="ancLoadGame" layoutX="54.0" prefHeight="465.0" prefWidth="1100.0" visible="false">
+         <children>
+            <TableView fx:id="tblPlayers" layoutX="360.0" layoutY="39.0" onMouseClicked="#tblPlayersClicked" prefHeight="319.0" prefWidth="391.0" stylesheets="@StyleCss.css">
+              <columns>
+                <TableColumn fx:id="colPlaId" prefWidth="64.0" sortable="false" text="ID" />
+                <TableColumn fx:id="colPlaName" prefWidth="173.99996948242188" sortable="false" text="Player Name" />
+                  <TableColumn fx:id="colPlaLevel" minWidth="0.0" prefWidth="76.6666259765625" sortable="false" text="Level" />
+                  <TableColumn fx:id="colPlaSteps" prefWidth="73.3333740234375" sortable="false" text="Steps" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnDelete" layoutX="506.0" layoutY="367.0" mnemonicParsing="false" onAction="#clickDelete" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/deleteBackButton.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+      <Button fx:id="btnLoad" layoutX="525.0" layoutY="499.0" mnemonicParsing="false" onAction="#changeLoadAnchor" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagesBackground/loadBackButton.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnNew" layoutX="400.0" layoutY="499.0" mnemonicParsing="false" onAction="#changeNewAnchor" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagesBackground/newBackButton.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnBack" layoutX="-3.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+         <graphic>
+            <ImageView fitHeight="65.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagesBackground/backBackButton.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

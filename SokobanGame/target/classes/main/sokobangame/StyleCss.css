@@ -1,0 +1,66 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 12, 2023, 1:54:08 PM
+    Author     : fabia
+*/
+
+.textfield-custom {
+    -fx-background-color: #b0b0b0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: #252525;
+    -fx-border-width: 2px;
+}
+
+.textfield-custom .text {
+    -fx-text-fill: #3e3e3e;
+}
+
+.map-gridane {
+    -fx-background-color: greenyellow;
+    -fx-background-position: center;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 20, 0.4, 0, 0);
+}
+
+.button-custom {
+    -fx-background-color: transparent;
+}
+
+.button-custom:pressed {
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+    -fx-transition-duration: 0.2s;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #888888, #555555);
+    -fx-border-radius: 0px;
+    -fx-padding: 0px;
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #888888, #555555);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0;
+}
+
+.table-view .column-header, .filter {
+    -fx-background-color: transparent;
+    -fx-size: 30px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+}
+
+
+
+

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.sokobangame.GameFour">
+   <children>
+      <ImageView fitHeight="678.0" fitWidth="1201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagesBackground/endBlur.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="ancLevel" layoutX="30.0" layoutY="20.0" onKeyPressed="#keyPressedMap" prefHeight="490.0" prefWidth="1120.0">
+         <children>
+            <ImageView fitHeight="455.0" fitWidth="1100.0" layoutX="10.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagesBackground/levelFourCompleted.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnNextLevel" layoutX="497.0" layoutY="304.0" mnemonicParsing="false" onAction="#clickNextLevel" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/nextBackButton.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <GridPane fx:id="grpLevel" layoutY="5.0" prefHeight="490.0" prefWidth="1120.0" styleClass="map-gridane" stylesheets="@StyleCss.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="30.0" layoutY="517.0" prefHeight="88.0" prefWidth="1120.0">
+         <children>
+            <Label fx:id="lblStepCounter" alignment="CENTER" layoutX="659.0" layoutY="17.0" prefHeight="53.0" prefWidth="109.0" text="0" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnPreviousMove" layoutX="942.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickPreviousMove" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/previousBackButton.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnResetLevel" layoutX="794.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickResetLevel" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/resetBackButton.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnSave" focusTraversable="false" layoutX="38.0" layoutY="7.0" mnemonicParsing="false" onAction="#clickSaveLevel" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/saveBackButton.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnBack" focusTraversable="false" layoutX="188.0" layoutY="7.0" mnemonicParsing="false" onAction="#changeMenu" prefHeight="53.0" prefWidth="100.0" styleClass="button-custom" stylesheets="@StyleCss.css">
+               <graphic>
+                  <ImageView fitHeight="65.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagesBackground/backBackButton.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="lblPlayerName" alignment="CENTER" layoutX="472.0" layoutY="17.0" prefHeight="53.0" prefWidth="160.0" text="." textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
